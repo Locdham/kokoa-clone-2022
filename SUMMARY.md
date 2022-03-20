@@ -59,3 +59,24 @@ form에서 버튼은 type submit으로
 
 - input 태그에 type을 "submit"으로 하는 방법
 - 링크는 무척 많아서 하나만을 위한 id나 class를 추가할 필요는 없다. form 태그안에 넣어둠
+
+# 6.5 Status-bar CSS
+
+- HTML에 CSS를 작성하고 싶을 때, "link:css"라 하고 엔터를 치면 자동 완성 된다.
+- font-family를 이용하여 서체를 변경할 수 있다.
+- Google fonts 웹사이트에서 원하는 폰트를 가져다 쓰면 된다.
+- 사용하지 않는 스타일까지 모두 선택하면, 하나의 스타일을 선택한 것보다 불러오는데 시간이 오래 걸릴 수 있다. → 사용하지 않을 스타일을 추려내는 것도 중요하다.
+- css hack(기술) → 레시피와 같은 것
+- 아이콘의 크기를 키워줄려면, 아이콘 이름에 2x or lg 등을 붙여준다.
+
+# Hack status-bar 3등분 기술
+
+사용된 CSS hack 에 대해서..
+
+1. body 100% 안에 있는 status-bar 전체를 우선 화면에서 가운데 위치하도록
+   justify-content:center; 를 적용합니다. 그러면 전체 요소들이 모두 가운데 위치하게 됩니다.
+
+2. status-bar**column에 각각 33% 값을 주어 status-bar를 3등분 합니다.
+   그러면 스크린을 줄이거나 늘이더라도 status-bar**column들은 그 안에서 왼쪽 정렬로 위치하게 됩니다.
+
+3. 1번째 column은 가장 왼쪽(기본값), 2번째는 가운데(center) 그리고 3번째는 가장 끝(flex-end)으로 위치시키면 시계는 가운데에 있고 나머지 요소는 가장자리에 위치하게 됩니다.
