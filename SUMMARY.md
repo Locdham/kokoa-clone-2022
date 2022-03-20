@@ -34,3 +34,15 @@ BEM(Block Element Modifier) —추천 규칙
   [BEM - Block Element Modifier](http://getbem.com/introduction/)
   [BEM 101 | CSS-Tricks](https://css-tricks.com/bem-101/)
   [BEM CSS 방법론](https://nykim.work/15)
+
+# 6.3 Font Awesome
+
+- 아이콘을 추가하는 데에는 두 가지 옵션이 있다.
+
+1. 직접 아이콘을 구하는 방법(직접 이미지를 만들고 추출하거나 svg파일을 이용.
+   svg는 픽셀이 없는 이미지 파일형식. 수학으로만 구성된 형식)
+2. Heroicons, FontAwesome에서 가져오기
+
+- FontAwesome에서 가져온 kit code 스크립트는 항상 맨 마지막줄에 있어야한다.
+  body 태그를 닫기 직전.
+- 'i'는 icon의 줄임말.
