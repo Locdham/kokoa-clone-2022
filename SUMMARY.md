@@ -87,3 +87,15 @@ form에서 버튼은 type submit으로
 - 먼저 브라우저 스타일을 없애고, 직접 디자인 하는게 더 좋은 방법이다.
 - styles.css에서 작성한 한 부분도 따로 css파일을 만들어 분리해주는 것이 깔끔하게 작업할 수 있는 방법이다. → CSS 코드를 여러 파일로 분할했다가 다시 합친다.
 - h1, p tag같은 텍스트를 다루는 tag들을 가운데 정렬 할 때는 text-align:center 이용
+
+# 6.7 Log-in form part01
+
+Custom property
+Reset CSS
+input:focus {
+outline: none;
+}
+Variable CSS
+:root {
+--yellow: #fae100;
+}
