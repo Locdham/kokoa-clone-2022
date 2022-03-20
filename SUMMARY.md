@@ -46,3 +46,16 @@ BEM(Block Element Modifier) —추천 규칙
 - FontAwesome에서 가져온 kit code 스크립트는 항상 맨 마지막줄에 있어야한다.
   body 태그를 닫기 직전.
 - 'i'는 icon의 줄임말.
+
+# 6.4 Sign-Up Screen part2
+
+헤더작성시,
+마찬가지로 어떤 페이지든 공통적으로 헤더를 가지고 있으므로 구분 가능하게 클래스를 만들어줘야함
+
+form 작성
+id pw 입력창과 버튼두개
+form에서 버튼은 type submit으로
+그리고 이번 프로젝트에 form은 많이 필요하지 않기 때문에 클래스 아이디를 고민안해도됨
+
+- input 태그에 type을 "submit"으로 하는 방법
+- 링크는 무척 많아서 하나만을 위한 id나 class를 추가할 필요는 없다. form 태그안에 넣어둠
