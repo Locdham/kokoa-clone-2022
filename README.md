@@ -1,3 +1,4 @@
-# Kakao-Clone-2022 Update
+# Kakao Clone 2022 Update
 
-CSS got so much better!
+HTML & CSS are so much fun!
+HTML & CSS are 훌륭하다!
