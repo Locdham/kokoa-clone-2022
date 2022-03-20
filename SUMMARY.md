@@ -13,3 +13,24 @@
    〈/div〉
 
 3. 〈!--내용--〉은 브라우저에게 보이지 않고, 사용자만 볼 수 있는 일종의 메모입니다. (물론 개발자 도구로는 볼 수 있습니다. 구현되는 페이지에 드러나지 않을 뿐입니다.)
+
+# 6.2 Block Element Modifier
+
+BEM
+block
+block**element
+block**element--modifier
+내가 내 코드를 다시 볼 때, 남들이 내 코드를 찾아 볼 때 이해에 도움을 줌
+
+BEM(Block Element Modifier) —추천 규칙
+
+- block : .btn {}
+- elements : .btn--price {}
+- modifiers : .btn--big {}
+
+단점 : 클래스 선언 종류가 많아서 코드가 길어진다.
+
+- 참고
+  [BEM - Block Element Modifier](http://getbem.com/introduction/)
+  [BEM 101 | CSS-Tricks](https://css-tricks.com/bem-101/)
+  [BEM CSS 방법론](https://nykim.work/15)
