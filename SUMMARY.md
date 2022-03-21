@@ -114,3 +114,18 @@ input:focus에서 border-color가 border-bottom에 적용되어 원하는대로 
 - [ ] 사이에 쓰인 것들은 특성 선택자(attribute selector)이다.
 - cursor: pointer;로 버튼 위의 커서를 변경할 수 있다.
 - color:inherit;는 부모로부터 색을 상속받는 것이다.
+
+# 6.9 Recap and Forms
+
+Form은 아주아주 중요한 요소 두가지를 가지고 있다
+
+- Action : 어떤 페이지로 data를 보낼건지 지정할 수 있다
+- Method :
+  └ Post : 백엔드서버에 정보를 전송하는 방식, 서버를 설정하여 사용하므로 이번강의에서 사용불가 하다
+  └ Get : URL에 포함되어도 상관없는 정보들을 GET방식으로 사용, username/password는 사용하면 안된다
+- #login-form ... 으로 썼찌만, .login-from\_\_\_ ... 으로 써도된다. 더 편한 방식을 택하면 된다.
+- CSS 파일에서 주석처리는 /\* \*/로 감싸주면 된다.
+- styles.css 파일에는 font-family와 같이 모든 스크린에 적용될 수 있는 스타일을 써놓는다.( or 모든 스크린의 background-color) 이는 하나의 방식이고, 자신만의 편한 방식을 택하면 된다.
+- form은 중요한 2가지 속성(attribute)을 가지고 있다. 하나는 action이고, 다른 하나는 method이다.
+
+# 6.10
