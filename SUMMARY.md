@@ -147,3 +147,15 @@ Navigation-bar 네비게이션바
 - 배열이 깨지는 경우 width : 100% 설정
 - 고정할 위치 (아래 인 경우 bottoom : 0;)과 같이 설정
 - box-sizing:border-box를 사용해 아이콘들이 한 줄로 보이게 함
+
+# 6.12 - box-sizing:border-box
+
+CSS에서 200px 크기의 box에 50px의 padding을 원할 경우,
+총 크기 200px, (width 150, padding 50 실제 내용 150)의 box를 생각해서
+padding : 50px, width : 200px 로 입력하지만,
+이렇게 하면 CSS에서는 padding을 50px 주고, 200px의 box width는 유지하려 하므로,
+총 크기 250px (width 200, padding 50 실제 내용 200)의 box를 가지게 된다.
+box-sizing : border-box 를 입력할 경우,
+padding을 입력해도 box사이즈를 신경쓰지 않는다는 의미이다.
+따라서, 처음에 원했던 50 padding, 150 box 를 가지게 된다.
+CSS에게 "패딩을 줘도 신경쓰지마! 내박스 사이즈 늘리지 말아줘" 라는 말이다
