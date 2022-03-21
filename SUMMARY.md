@@ -99,3 +99,18 @@ Variable CSS
 :root {
 --yellow: #fae100;
 }
+
+# 6.8 NOT 속성
+
+border설정은 input {border: none;}에서 시작함.
+input:focus를 먼저쓰면 색을 설정해줘도 border가 없으니 적용이 불가능하고,
+그 이후에 not으로 border-bottom만 정의해주니 focus해도 색변화가 없다.
+
+input:not([type="submit"])을 먼저쓰면 border-bottom이 정의되므로
+input:focus에서 border-color가 border-bottom에 적용되어 원하는대로 나온다.
+
+- 가상 클래스 선택자(pseudo element)
+- :not()→ 뭔가가 적용되는 걸 원하지 않을 때 사용한다.
+- [ ] 사이에 쓰인 것들은 특성 선택자(attribute selector)이다.
+- cursor: pointer;로 버튼 위의 커서를 변경할 수 있다.
+- color:inherit;는 부모로부터 색을 상속받는 것이다.

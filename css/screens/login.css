@@ -1,0 +1,66 @@
+.welcome-header {
+  margin: 90px 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+}
+.welcome-header__title {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+.welcome-header__text {
+  width: 60%;
+  opacity: 0.7;
+}
+#login-form {
+  display: flex;
+  margin: 0px 30px;
+  flex-direction: column;
+  /* 인풋상자 아래 정렬: 플렉스-다이렉션: 컬럼 사용 */
+}
+#login-form input {
+  border: none;
+  padding: 20px 0px;
+  font-size: 18px;
+  margin-bottom: 25px;
+  /* border 설정이 none에서 시작 */
+}
+#login-form input:not([type="submit"]) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: border-color 0.5s ease-in-out;
+  /* not 속성 : "이 것을 제외한 나머지에 적용하고 싶어요" 라는 뜻이며
+  서브밋 제외한 나머지 인풋에 적용됨 */
+}
+#login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  /* 모든 플레이스홀더에 적용 */
+}
+#login-form input:focus {
+  border-color: var(--yellow);
+  /* variable.css 전역 루트값 설정 */
+}
+#login-form input[type="submit"] {
+  background-color: var(--yellow);
+  margin-bottom: 25px;
+  padding: 20px 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  /* 커서 - 포인터 설정 */
+}
+#login-form a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  color: inherit;
+  /* 부모로부터 색상을 상속받는것 inherit, 
+  a 앵커가 색상을 상속받아옴 - 부모 #login-form 으로부터
+  디폴트 색상 블랙이 적용됨 */
+}
+
+/* 클래스 적용 했다면 
+".login-form__btn {}"
+".login-form__input {}"
+".login-form__a {}" 
+이엇을것 */
