@@ -1,5 +1,7 @@
 /* 스테이터스바 3등분 기술 (시계 센터맞추기) */
 .status-bar {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: center;
   padding: 5px 3px;

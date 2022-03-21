@@ -130,3 +130,9 @@ table {
 input:focus {
   outline: none;
 }
+a {
+  color: inherit;
+  text-decoration: none;
+  /* 모든링크 부모컬러 상속, 
+  밑줄같은 데코레이션 원치않아 설정 */
+}

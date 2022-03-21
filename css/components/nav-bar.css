@@ -1,8 +1,19 @@
 nav {
+  position: fixed;
+  /* 포지션 고정 */
+  bottom: 0;
+  /* 네비바 밑으로 내림 */
+  width: 100%;
+  /* 내린후, 배열이 몰려 너비 100% 설정 */
+  box-sizing: border-box;
   background-color: #f9f9fa;
-  padding: 20px 40px;
+  padding: 20px 50px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 .nav__list {
   display: flex;
   justify-content: space-between;
+}
+.nav__link {
+  color: #2f363e;
 }

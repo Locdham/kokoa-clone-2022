@@ -128,7 +128,7 @@ Form은 아주아주 중요한 요소 두가지를 가지고 있다
 - styles.css 파일에는 font-family와 같이 모든 스크린에 적용될 수 있는 스타일을 써놓는다.( or 모든 스크린의 background-color) 이는 하나의 방식이고, 자신만의 편한 방식을 택하면 된다.
 - form은 중요한 2가지 속성(attribute)을 가지고 있다. 하나는 action이고, 다른 하나는 method이다.
 
-# 6.10
+# 6.10 Navigation Bar part one
 
 Navigation-bar 네비게이션바
 
@@ -139,3 +139,11 @@ Navigation-bar 네비게이션바
 - 점 3개는 ellipsis라고 한다.
 - 속성과 class 이름이 똑같아도 상관없다.
 - 메인 styles.css에 다른 요소의 css를 import 할 때, 순서를 지키는 것이 정말 중요하다.
+
+# 6.11 Navigation Bar part Two
+
+- 위치를 고정 시키기
+- position : fixed
+- 배열이 깨지는 경우 width : 100% 설정
+- 고정할 위치 (아래 인 경우 bottoom : 0;)과 같이 설정
+- box-sizing:border-box를 사용해 아이콘들이 한 줄로 보이게 함
