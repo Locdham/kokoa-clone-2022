@@ -129,3 +129,13 @@ Form은 아주아주 중요한 요소 두가지를 가지고 있다
 - form은 중요한 2가지 속성(attribute)을 가지고 있다. 하나는 action이고, 다른 하나는 method이다.
 
 # 6.10
+
+Navigation-bar 네비게이션바
+
+- navigation 안의 ul 안에 많은 li들로 구성되는데, 검색엔진 구글도 navigation을 찾아서 ul의 li 안에 있는 link를 가져오게끔 설정되어 있다.
+- VSC의 단축키로 navigation에서 하위메뉴까지 한번에 자동 완성 시킬 수 있다.
+  → nav>il>li\*(필요한 갯수)>a
+  → 그 후 #과 tab만으로 간편하게 작성이 가능하다.(수정하다보면 다음 tab이 옳게 먹히지 않는다.)
+- 점 3개는 ellipsis라고 한다.
+- 속성과 class 이름이 똑같아도 상관없다.
+- 메인 styles.css에 다른 요소의 css를 import 할 때, 순서를 지키는 것이 정말 중요하다.
