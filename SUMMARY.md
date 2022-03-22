@@ -166,3 +166,13 @@ CSS에게 "패딩을 줘도 신경쓰지마! 내박스 사이즈 늘리지 말�
 - position: absolute;는 정중앙. absolute는 해당 element의 가장 가까운 relative를 가진 부모 기준으로 움직인다. 기본적으로 body가 그에 해당되며, 따로 원하는 기준이 있다면 그 container에 position: relative;를 준다.
 
 # 6.14 Screen Header
+
+# 6.15 Friends Screen part One
+
+CSS에서 두 객체의 겹침을 피하는 방법은 무엇입니까?
+
+- 고정 위치 대신 top : 0; 과 함께 position : sticky; 를 사용할 수 있습니다. 그러면 겹침을 피하기 위해 다른 요소를 추가 할 필요가 없습니다.
+
+고정 위치
+
+이것은 기본적으로 상대 위치와 고정 위치 사이의 하이브리드로, 위치 지정 요소가 특정 임계점 (예 : 뷰포트 상단에서 10px)까지 스크롤 될 때까지 상대적으로 위치 된 것처럼 작동 한 후 고정됩니다.
