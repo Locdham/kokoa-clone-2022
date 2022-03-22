@@ -1,0 +1,17 @@
+.screen-header {
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  /* 헤더 위치 고정시 설정!! */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 25px;
+}
+.screen-header__title {
+  font-size: 32px;
+  font-weight: 600;
+}
+.screen-header__icons span {
+  margin-left: 25px;
+}
