@@ -159,3 +159,8 @@ box-sizing : border-box 를 입력할 경우,
 padding을 입력해도 box사이즈를 신경쓰지 않는다는 의미이다.
 따라서, 처음에 원했던 50 padding, 150 box 를 가지게 된다.
 CSS에게 "패딩을 줘도 신경쓰지마! 내박스 사이즈 늘리지 말아줘" 라는 말이다
+
+# 6.13 Navigation Bar part Three
+
+- border을 사각형으로 만들고 싶다면, radius를 width의 절반값을 주면된다.
+- position: absolute;는 정중앙. absolute는 해당 element의 가장 가까운 relative를 가진 부모 기준으로 움직인다. 기본적으로 body가 그에 해당되며, 따로 원하는 기준이 있다면 그 container에 position: relative;를 준다.
