@@ -180,3 +180,10 @@ CSS에서 두 객체의 겹침을 피하는 방법은 무엇입니까?
 # 6.16
 
 사진 사이즈 변경 시, 가로 세로 비율 그대로 유지하고 싶으신 분들은 object-fit: cover; 추가한다
+
+# 6.17 User Component part Two
+
+modifier 로 .user-component**avatar--xl을 사용했는데,
+그럴필요 없이 기존에 있던 user-component**avatar 에서 width:80, height:80을 하면 되지 않을까?
+
+- 그렇게 되면 나중에 채팅페이지나 다른곳에서 쓰일 \_\_avatar가 다 80x80으로 변경되니까 따로 클래스를 준것!
