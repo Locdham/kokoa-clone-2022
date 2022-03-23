@@ -187,3 +187,5 @@ modifier 로 .user-component**avatar--xl을 사용했는데,
 그럴필요 없이 기존에 있던 user-component**avatar 에서 width:80, height:80을 하면 되지 않을까?
 
 - 그렇게 되면 나중에 채팅페이지나 다른곳에서 쓰일 \_\_avatar가 다 80x80으로 변경되니까 따로 클래스를 준것!
+
+# 6.18 Finishing Friends Screen
