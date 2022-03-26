@@ -189,3 +189,21 @@ modifier 로 .user-component**avatar--xl을 사용했는데,
 - 그렇게 되면 나중에 채팅페이지나 다른곳에서 쓰일 \_\_avatar가 다 80x80으로 변경되니까 따로 클래스를 준것!
 
 # 6.18 Finishing Friends Screen
+
+# 6.19 Chats Screen part one
+
+# 6.20 Chats Screen part Two
+
+badge.css 생성: 빨간 동그라미
+.nav-notification -> 네비 바에 뜬 알람 (아이콘의 우측 상단에 오게 함)
+각 스크린의 네비는 badge nav-noti 두 가지 클래스를 모두 적용해주고
+챗 스크린에서 톡 알림은 badge 클래스만 이용
+
+챗 스크린에서 뱃지와 시간을 정렬하기 위해서
+user-component\_\_column:last-child
+display: flex
+flex-direction: column
+align-items: flex-end
+
+그런데 이렇게 하면 friends screen에서 channel에서 2>가 세로로 정렬됨.
+이를 막기 위해 2와 >를 한 div에 묶어준다.
