@@ -207,3 +207,31 @@ align-items: flex-end
 
 그런데 이렇게 하면 friends screen에서 channel에서 2>가 세로로 정렬됨.
 이를 막기 위해 2와 >를 한 div에 묶어준다.
+
+# 6.21 Find Screen Part One
+
+icon 위에 빨간점 component로 만들기
+
+1. components 파일에 point.css 생성
+
+2. point.css에 red point에 대한 코드 작성
+   .point {
+   background-color: tomato;
+   width: 5px;
+   height: 5px;
+   border-radius: 2.5px;
+   position: absolute;
+   right: -6px;
+   top: -7px;
+   }
+
+3. styles.css 에 import
+   @import "components/point.css";
+
+4. find.html 에 해당코드 작성 ( div class=“point” )
+   점 찍고 싶은 span 사이에 넣어주기
+
+5. screen-header.css에서 relative 관계 설정해주기
+   .screen-header\_\_icons span{} 에 position: relative 설정
+
+6. Boom해주기
