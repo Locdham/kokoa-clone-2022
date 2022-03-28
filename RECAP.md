@@ -235,3 +235,14 @@ icon 위에 빨간점 component로 만들기
    .screen-header\_\_icons span{} 에 position: relative 설정
 
 6. Boom해주기
+
+# 6.22 Find Screen Part Two
+
+.recommended-friends span {
+font-size: 18px;
+text-align: center;
+margin: 100px 0px;
+/_ 마진이 적용안되는 이유는 inline 이기 때문이다. block으로 바꿔라! _/
+display: block;
+color: var(--font-color-gray);
+}
