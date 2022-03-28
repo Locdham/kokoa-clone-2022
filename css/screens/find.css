@@ -1,7 +1,6 @@
 .find-icons {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .find-icons__icon {
@@ -16,4 +15,26 @@
 
 .find-icons__icon span {
   margin-top: 18px;
+}
+
+.recommended-friends {
+  margin: 25px 0px;
+  padding: 25px 0px;
+  border-top: var(--main-border);
+  border-bottom: var(--main-border);
+}
+
+.recommended-friends__title {
+  color: var(--font-color-gray);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.recommended-friends span {
+  font-size: 18px;
+  text-align: center;
+  margin: 100px 0px;
+  /* 마진이 적용안되는 이유는 inline 이기 때문이다. block으로 바꿔라! */
+  display: block;
+  color: var(--font-color-gray);
 }
