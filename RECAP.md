@@ -246,3 +246,8 @@ margin: 100px 0px;
 display: block;
 color: var(--font-color-gray);
 }
+
+# 6.23 Find Screen Part Three
+
+- HTML 코드에선 대문자를 나타내려고 해도, 우선 소문자로만 작성한다. 대문자는 디자인적인 요소이기 때문에, CSS 파일에서 작성해줘야 한다.
+- text-transform: uppercase; 대문자로 만들기.
