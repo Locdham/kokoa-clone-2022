@@ -251,3 +251,33 @@ color: var(--font-color-gray);
 
 - HTML 코드에선 대문자를 나타내려고 해도, 우선 소문자로만 작성한다. 대문자는 디자인적인 요소이기 때문에, CSS 파일에서 작성해줘야 한다.
 - text-transform: uppercase; 대문자로 만들기.
+
+# 6.25 More Screen part One
+
+1. Add 2 more icons on More screen
+   아이콘 추가 작업건
+
+.icon-row {
+display: flex;
+flex-wrap: wrap;
+/_ justify-content: space-between; _/
+}
+
+.icon-row\_\_icon {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 25%;
+padding: 10px;
+box-sizing: border-box;
+transition: color 0.3s ease-in-out;
+color: rgba(0, 0, 0, 0.6);
+}
+
+2. Add animation for 6 icons
+   모든아이콘 애니메이션 추가건
+
+.icon-row\_\_icon:hover {
+cursor: pointer;
+color: black;
+}
