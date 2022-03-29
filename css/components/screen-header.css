@@ -10,14 +10,20 @@
   align-items: center;
   padding: 40px 25px 15px 25px;
 }
+
 .screen-header__title {
   font-size: 32px;
   font-weight: 600;
 }
-.screen-header__icons span {
+
+.screen-header__icons {
   position: relative;
+}
+
+.screen-header__icons span {
   margin-left: 25px;
 }
+
 .screen-header__notification {
   display: flex;
   background-color: tomato;
@@ -25,5 +31,6 @@
   height: 6px;
   border-radius: 50%;
   position: absolute;
-  left: 70px;
+  top: -5px;
+  right: -5px;
 }
