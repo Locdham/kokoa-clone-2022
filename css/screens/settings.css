@@ -4,8 +4,43 @@
   font-size: 20px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .settings__setting i {
   margin-right: 10px;
+}
+
+.setting__setting-column:last-child {
+  opacity: 0.5;
+}
+
+.privacy {
+  padding-top: 25px;
+}
+
+.version {
+  margin-bottom: 25px;
+}
+
+.latest {
+  margin-bottom: 25px;
+}
+
+.setting__setting-column {
+  display: flex;
+  align-items: center;
+}
+
+.setting__setting-new {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: tomato;
+  color: white;
+  font-size: 8px;
+  margin-left: 10px;
 }
