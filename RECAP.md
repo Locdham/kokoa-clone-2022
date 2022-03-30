@@ -296,3 +296,13 @@ margin-left: auto;
 /_ 정중앙 센터 맞추기 핵꿀팁!!! _/
 
 width 33% border-box
+
+# 6.28 Settings and Chat Screen part One
+
+# javascript:history.back();
+
+모든 페이지에서 settings.html로 연결할수 있게 해 놓으신분들 중 뒤로가기 버튼을 눌렀을때 more.html이 아니라 이전 html 페이지로 연결되게 하실 분들은 href 값으로 "javascript:history.back();" 을 주면 됨
+
+# text-align:right;
+
+alt-header:last-child의 돋보기 아이콘과 햄버거아이콘 사이의 간격을 주기위해 아이콘에 margin을 적용했더니, 이름이 중앙에서 왼쪽으로 밀려납니다. 이름에 또 따로 position:relative적용 후 좌우로 움직이는 방법외에 이름을 중앙에 정렬하는 방법 있을까요??
