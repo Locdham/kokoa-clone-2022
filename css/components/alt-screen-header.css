@@ -11,33 +11,35 @@
   padding: 40px 25px 15px 25px;
 }
 
+.alt-header__column {
+  width: 33%;
+}
 .alt-header__title {
   font-weight: 600;
   font-size: 27px;
 }
 
 /* 정중앙 센터 맞추기 핵꿀팁!!! */
-/* .alt-header__column:first-child {
+.alt-header__column:first-child {
   margin-right: auto;
+}
+.alt-header__column:nth-child(2) {
+  text-align: right;
 }
 .alt-header__column:last-child {
   margin-left: auto;
-} */
-/* 정중앙 센터 맞추기 핵꿀팁!!! */
+  display: flex;
+  justify-content: flex-end;
+}
 
-.alt-header__column-icon-space {
+.alt-header__column span {
   margin-left: 20px;
 }
 
-.alt-header__column {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
+/* .alt-header__column-icon-space {
+  margin-left: 20px;
+} */
 
-.chatname {
-  display: flex;
-  position: absolute;
-  padding-left: 75px;
-}
+/* .chatname {
+  text-align: right;
+} */
