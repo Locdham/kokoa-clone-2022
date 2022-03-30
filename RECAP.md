@@ -306,3 +306,29 @@ width 33% border-box
 # text-align:right;
 
 alt-header:last-child의 돋보기 아이콘과 햄버거아이콘 사이의 간격을 주기위해 아이콘에 margin을 적용했더니, 이름이 중앙에서 왼쪽으로 밀려납니다. 이름에 또 따로 position:relative적용 후 좌우로 움직이는 방법외에 이름을 중앙에 정렬하는 방법 있을까요??
+
+# 6.29 Chat Screen part Two
+
+1. z-index
+   default: 0
+   숫자가 작을수록 낮은 layer, 클수록 위의 layer
+   fixed, absolute position에 이용 가능.
+
+2. fixed를 모두 sticky로 바꾸어 적용
+
+3. .alt-header\_\_column {
+   width: 33%;
+   }
+
+/_ 정중앙 센터 맞추기 핵꿀팁!!! _/
+.alt-header**column:first-child {
+margin-right: auto;
+}
+.alt-header**column:nth-child(2) {
+text-align: right;
+}
+.alt-header\_\_column:last-child {
+margin-left: auto;
+display: flex;
+justify-content: flex-end;
+}
