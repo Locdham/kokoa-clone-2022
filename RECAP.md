@@ -281,3 +281,18 @@ color: rgba(0, 0, 0, 0.6);
 cursor: pointer;
 color: black;
 }
+
+# 6.26 More Screen part Two
+
+# 6.27 Settings Screen part One
+
+/_ 정중앙 센터 맞추기 핵꿀팁!!! _/
+.alt-header**column:first-child {
+margin-right: auto;
+}
+.alt-header**column:last-child {
+margin-left: auto;
+}
+/_ 정중앙 센터 맞추기 핵꿀팁!!! _/
+
+width 33% border-box
