@@ -17,10 +17,27 @@
 }
 
 /* 정중앙 센터 맞추기 핵꿀팁!!! */
-.alt-header__column:first-child {
+/* .alt-header__column:first-child {
   margin-right: auto;
 }
 .alt-header__column:last-child {
   margin-left: auto;
-}
+} */
 /* 정중앙 센터 맞추기 핵꿀팁!!! */
+
+.alt-header__column-icon-space {
+  margin-left: 20px;
+}
+
+.alt-header__column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.chatname {
+  display: flex;
+  position: absolute;
+  padding-left: 75px;
+}
