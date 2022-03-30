@@ -108,3 +108,11 @@
 .open-post__heart-count span {
   margin-left: 3px;
 }
+
+#find-screen .screen-header {
+  background-color: white;
+  z-index: 1;
+}
+#find-screen .status-bar {
+  z-index: 2;
+}

@@ -44,3 +44,12 @@
   font-size: 8px;
   margin-left: 10px;
 }
+
+#settings-screen .alt-header {
+  background-color: white;
+  z-index: 1;
+}
+
+#settings-screen .status-bar {
+  z-index: 2;
+}

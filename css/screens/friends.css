@@ -24,3 +24,10 @@
   align-items: center;
   color: rgba(0, 0, 0, 0.5);
 }
+#friends-screen .screen-header {
+  background-color: white;
+  z-index: 1;
+}
+#friends-screen .status-bar {
+  z-index: 2;
+}

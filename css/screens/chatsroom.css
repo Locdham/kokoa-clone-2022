@@ -3,8 +3,25 @@
   height: 11000vh;
 }
 
-#chat-screen .atl-header {
+#chat-screen .atl-header,
+#chat-screen .status-bar {
   position: fixed;
   width: 100%;
+  top: 0;
   box-sizing: border-box;
+  background-color: #9fb9c7;
+}
+
+.chatsroom {
+  margin-top: 150px;
+}
+
+#chat-screen .atl-header {
+  top: 5px;
+  z-index: 1;
+}
+
+/* 레이어 위/아래 기능 추가 Z-index*/
+#chat-screen .status-bar {
+  z-index: 2;
 }

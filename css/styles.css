@@ -17,6 +17,7 @@
 @import "screens/more.css";
 @import "screens/settings.css";
 @import "screens/chatsroom.css";
+@import "screens/chats.css";
 
 /* Styles.css 에는 모든 스크린에 적용될 수 있는 스타일을 넣는다 */
 body {
