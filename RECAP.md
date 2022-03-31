@@ -362,3 +362,30 @@ justify-content: flex-end;
   .message-row--own .message\_\_info {
   flex-direction: row-reverse;
   }
+
+# 6.33 Write Message Input
+
+- .reply input {
+  height: 30px;
+  width: 100%;
+  }
+- width:100% 이 바로 안되는 이유!
+- - 인풋위치가 .reply\_\_column 안에 있기 때문이며, 이 컬럼은 width를 갖고 있지 않기 때문임
+- - 채팅창 인풋 width 100%를 적용하려면 아래와 같이 각각 .reply\_\_column 에 width 를 설정해줘야함.
+
+- 아이콘 두개가 겹쳐서 같이 움직일시
+  .reply\_\_column:last-child i {
+  right: 10px;
+  }
+
+- - 움직일 칠드런을 다이렉트로 선택해서 움직이게 하자! 속성기능 ">"
+    .reply**column:last-child > i,
+    .reply**column:last-child button {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    }
+
+.reply\_\_column:last-child > i {
+right: 10px;
+}
