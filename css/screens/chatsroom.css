@@ -42,6 +42,7 @@
 .message-row {
   width: 100%;
   display: flex;
+  margin-bottom: 25px;
 }
 
 .message-row img {
@@ -72,6 +73,29 @@
 
 .message__time {
   font-size: 12px;
-  margin-left: 5px;
+  margin-left: 8px;
   color: #647079;
+}
+
+.message-row--own {
+  justify-content: flex-end;
+}
+.message-row--own .message__bubble {
+  background-color: var(--yellow);
+  padding: 12px;
+  border-radius: 12px;
+  border-top-right-radius: 0px;
+  margin-left: 8px;
+  margin-right: 0px;
+}
+
+/* .message-row--own .message__bubble {
+  order: 1;
+}
+.message-row--own .message__time {
+  order: 0;
+} */
+
+.message-row--own .message__info {
+  flex-direction: row-reverse;
 }
