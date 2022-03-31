@@ -340,3 +340,25 @@ justify-content: flex-end;
 - border-top-left-radius 처럼 꼭지점 하나를 특정해서 radius를 줄 수도 있다.
 - message-row 의 width:100% 이어야 왼쪽으로 정렬이 되는건지 보충 설명
 - - width를 주지않으면 컨텐츠 크기만큼만 적용되서 flex박스에 끌려다니는데 width를 100%주면 화면 폭만큼의 크기를갖고 message-row자체는 flex박스의 영향을 받지만 내부컨텐츠인 img나 message-row내부 자식들은 직접적인 영향을 받지않아서 디폴트로 좌측에 정렬됨
+
+# 6.32 Chat Screen part Five
+
+- BEM (--modifier)
+  --modifier 의 사용은 중요하고 유용하다.
+  ex) message-row--own
+
+- 영상 3분54초: flex의 children의 순서 바꾸는 첫번째 방법! order기능
+- order기능은 only flex children 에게만 사용된다
+- order : 0, 1, 2 ... 와 같이 순서를 정해주는 방식이다
+  .message-row--own .message**bubble {
+  order: 1;
+  }
+  .message-row--own .message**time {
+  order: 0;
+  }
+
+- 좌/우 순서바꾸는 두번째 방법! row-reverse
+- 설정된 --modifier 기준으로 뒤집을 수 있다
+  .message-row--own .message\_\_info {
+  flex-direction: row-reverse;
+  }
