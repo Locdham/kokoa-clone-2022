@@ -389,3 +389,11 @@ justify-content: flex-end;
 .reply\_\_column:last-child > i {
 right: 10px;
 }
+
+# 6.34 Splash Screen part One
+
+- 스플래시 스크린 : 페이지를 새로고침할 때마다 스플래시 스크린을 나타나게 하려함.
+- position: absolute 사용하여 모든화면 레이어의 가장 위로 올린다.
+- body 기준 정렬되어야 한다.
+- 100vh는 화면 높이의 100%,
+- 100vw는 화면 너비의 100%이다.
