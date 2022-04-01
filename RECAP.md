@@ -518,3 +518,40 @@ animation-delay: 1.5s;
 - 이것이 변화하는게 확실하다고 말해주는것
 - 변할것은 transform
 - 브라우저가 컴퓨터의 그래픽카드를 이용해 애니메이션을 가속화 함
+
+# 6.38 Animating Chats Screen
+
+# 애니메이션 - 메인챗 페이드인 애니메이션
+
+@keyframes fadeInLeftRight {
+from {
+opacity: 0;
+transform: translateX(-150px);
+}
+to {
+opacity: 1;
+transform: none;
+}
+}
+
+# 애니메이션 - "focus-within"
+
+- 내부적으로 focus된 element가 있는지 알수있도록 해줌
+- .reply:focus-within
+- 리플라이 클래스 내부에 focus가 된 element가 있다면.. 이라는 뜻
+
+- 포커스위딘일때, 리플라이컬럼의 퍼스트차일드인 아이콘을 지우고
+  .reply:focus-within .reply\_\_column:first-child {
+  opacity: 0;
+  visibility: hidden;
+  }
+- 포커스위딘일때, 윙크아이콘과 버튼을 지운다
+  .reply:focus-within .fa-face-kiss-wink-heart,
+  .reply:focus-within button {
+  opacity: 0;
+  }
+- 포커스위딘일때, 인풋창의 공간이 넓어진다.
+  .reply:focus-within input {
+  width: 98vw;
+  transform: translateX(-12%);
+  }
