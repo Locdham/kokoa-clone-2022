@@ -454,3 +454,54 @@ visibility:hidden;(기능까지 숨김, 마우스클릭 가능)
 # animation-delay: 2s;
 
 - 애니메이션 몇초간 잠시 정지하라는 의미
+
+# 6.36 Navigation Animation
+
+# 애니메이션의 예시 :채팅 네비게이션바 숫자 1 애니메이션
+
+- 애니메이션의 어떻게 동작을 할것인지 세부적으로 넣어주고 이름을 설정한다
+  @keyframes notificationanimation {
+  0% {
+  transform: none;
+  }
+  50% {
+  transform: translateY(-5px) rotateY(360deg);
+  }
+  100% {
+  transform: none;
+  }
+  }
+
+- 애니메이션 설정을 할 클래스 네임에 애니메이션 동작시간을 설정한다
+  .nav\_\_chat-notification {
+  animation: notificationanimation 2s ease-in-out infinite;
+  }
+
+# 애니메이션 : 네비게이션바 버튼들 아래에서 나타나기
+
+@keyframes appearBtnAnimation {
+from {
+opacity: 0;
+}
+to {
+transform: none;
+opacity: 1;
+}
+}
+
+.nav\_\_btn {
+transform: translateY(50px);
+animation: appearBtnAnimation 1s ease-in-out forwards;
+opacity: 0;
+}
+
+/_ 네브버튼 하나씩 올라오게 하려면.. _/
+.nav**btn:nth-child(2) {
+animation-delay: 0.5s;
+}
+.nav**btn:nth-child(3) {
+animation-delay: 1s;
+}
+.nav\_\_btn:last-child {
+animation-delay: 1.5s;
+}
