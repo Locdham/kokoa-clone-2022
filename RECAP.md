@@ -555,3 +555,13 @@ transform: none;
   width: 98vw;
   transform: translateX(-12%);
   }
+
+# 6.39 Recap
+
+# 6.40 No Mobile Media Query
+
+@media screen and (max-width: 645px) {
+#no-mobile {
+display: none;
+}
+}
