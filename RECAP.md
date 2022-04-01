@@ -505,3 +505,16 @@ animation-delay: 1s;
 .nav\_\_btn:last-child {
 animation-delay: 1.5s;
 }
+
+# 6.37 More Animations
+
+# find 섹터의 하트카운터 hearbeat 애니메이션
+
+- 새로운 property 인 "will-change: ;"
+- 브라우저에게 어떤 것이 변할 것인지 예고해주는 것
+- element에 실행되길 기대하는 변화를 명시함!
+- will-change: transform;
+- 일종의 브라우저를 돕는 행위
+- 이것이 변화하는게 확실하다고 말해주는것
+- 변할것은 transform
+- 브라우저가 컴퓨터의 그래픽카드를 이용해 애니메이션을 가속화 함
