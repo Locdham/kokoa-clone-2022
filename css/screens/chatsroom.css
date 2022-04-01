@@ -145,7 +145,7 @@
   align-items: center;
   padding: 5px 20px;
   box-sizing: border-box;
-  transition: all 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .reply .reply__column:first-child {
@@ -166,7 +166,7 @@
   width: 100%;
   border: var(--main-border);
   border-radius: 15px;
-  transition: 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .reply__column:last-child > i,
