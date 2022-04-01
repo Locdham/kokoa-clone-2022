@@ -397,3 +397,60 @@ right: 10px;
 - body 기준 정렬되어야 한다.
 - 100vh는 화면 높이의 100%,
 - 100vw는 화면 너비의 100%이다.
+
+# 6.35 Splash Screen part Two
+
+- CSS의 keyframes 애니메이션으로 splash 애니메이션을 줄 수는 있지만, 완벽하게 없어진 상태를 만들 수는 없다. 때문에 JavaScript가 필요하다.
+- 애니메이션의 마지막 값을 기억하고 싶다면 forwards라는 단어를 사용해야한다. → 마지막 keyframes를 기억한다.
+- animation-delay로 약간 지연 시킬 수 있다.
+
+# 애니메이션 추가
+
+- CSS 로는 스플래시 엘레멘트를 페이지로부터 완전히 없앨수는 없다.
+- 애니메이션 추가하기
+  @keyframes hidesplashscreen {
+  from {
+  opacity: 1;
+  }
+  to {
+  opacity: 0;
+  }
+  }
+  #splash-screen {
+  animation: hidesplashscreen 1s ease-in-out;
+  }
+
+# forwards
+
+- 여기서, 애니메이션 효과는 다시 돌아오게 된다. 마지막값 opacity:0 을 유지하지않고 opacity:1로 돌아오게된다.
+- 마지막 opacity:0 을 유지하려면 "forwards" 속성을 넣어준다.
+- "forwards" 는 마지막 키프레임을 유지하라 라는말과 같다
+  #splash-screen {
+  animation: hidesplashscreen 1s ease-in-out forwards;
+  }
+
+# visibility: hidden
+
+display:none;(눈에보이는화면만 없앰)
+visibility:hidden;(기능까지 숨김, 마우스클릭 가능)
+
+- 하지만 여전히 스크린은 겉으로는 보이지 않지만 여전히 남아있다.
+- 그래서 클릭을할수도 없다.
+- 하여, "visibility: hidden" 이라는 속성을 @keyframe 에 추가해준다.
+  @keyframes hidesplashscreen {
+  from {
+  opacity: 1;
+  }
+  to {
+  opacity: 0;
+  visibility: hidden
+  }
+  }
+- "visibility: hidden" 이속성은 여전히 html에 남아있지만 마우스에 걸리지않게 빠져버리는 것이다. 즉 클릭을 할수 있다는 얘기
+- 그래서 뭔가를 숨기거나 할때는 이테크닉을 사용하면 안되고,
+  무언가를 html을 제거하려거나 숨기려할때는 javascript를 사용해야한다.
+- CSS에서는 단지 브라우저가 스플래시 엘레멘트를 무시하도록 만든것
+
+# animation-delay: 2s;
+
+- 애니메이션 몇초간 잠시 정지하라는 의미
